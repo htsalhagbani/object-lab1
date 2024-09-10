@@ -4,7 +4,9 @@ const User = {
     email:"htsalhagbani@gmail.com",
     available: false,
     AvailabelFun() {
-        return this.available ? 'is available for work.' : ' is not available for work.';
+         if (this.available){
+        return 'is available for work.'
+        } else{ return ' is not available for work.'}
     },
     address: {
         street: 'mohammed khalid',
